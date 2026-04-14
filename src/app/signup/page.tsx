@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Login() {
+export default function Signup() {
   return (
     <>
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -78,10 +78,10 @@ export default function Login() {
           <p className="mt-10 text-center text-sm/6 text-gray-500">
             Not a member?{" "}
             <Link
-              href="/signup"
+              href="#"
               className="font-semibold text-indigo-600 hover:text-indigo-500"
             >
-              Signup
+              Start a 14 day free trial
             </Link>
           </p>
         </div>
