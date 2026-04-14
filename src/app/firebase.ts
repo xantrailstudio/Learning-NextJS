@@ -1,0 +1,22 @@
+import { initializeApp, getApps, getApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAX8Mf2LwO9Sz1NlqpqCEJeY9TWLN7dxbU",
+  authDomain: "learning-nextfirebase.firebaseapp.com",
+  projectId: "learning-nextfirebase",
+  storageBucket: "learning-nextfirebase.firebasestorage.app",
+  messagingSenderId: "183043631558",
+  appId: "1:183043631558:web:026c5e541c35d3a9cfeac7",
+  measurementId: "G-QDLYJPN4R2",
+};
+
+// Initialize Firebase
+const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
+
+// Initialize Services
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+export { app, db, auth };
